@@ -1,0 +1,65 @@
+.mainContent{
+    color: white;
+    margin-left: 20px;
+}
+
+.mainContent__search{
+    background: white;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    width: 180px;
+    height: 20px;
+}
+
+.mainContent__search{
+    display: flex;
+    margin-top: 10px;
+}
+
+.mainContent__top{
+    display: flex;
+}
+
+.mainContent__topRight{
+    position: absolute;
+    right: 250px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.mainContent__topRight > button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    color: white;
+}
+
+.mainContent__userInfo{
+    display: flex;
+    background-color: black;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    margin-left: 5px;
+    margin-top: -5px;
+    height: 48px;
+    border-radius: 30px;
+}
+
+.mainContent__userInfo > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.mainContent__userInfo > p{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    font-weight: 800;
+}

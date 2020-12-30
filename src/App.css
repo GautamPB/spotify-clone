@@ -1,0 +1,17 @@
+*{
+  margin: 10 0 0 0;
+  background-color: rgb(32, 32, 32);
+}
+
+.mainContent{
+  /* background-color: rgb(32, 32, 32); */
+}
+
+.App__homePage{
+  display: flex;
+}
+
+.friendSection{
+  position: absolute;
+  right: 0px;
+}

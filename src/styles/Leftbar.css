@@ -1,0 +1,56 @@
+.leftBar{
+    margin-left: 10px;
+    color: rgb(160, 160, 160);
+    border-right: solid;
+    border-color: white;
+    border-width: 1px;
+    /* padding-right: 10px; */
+}
+
+.leftBar__mainNav > h5{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.leftBar__mainNav > h5:hover{
+    color: white;
+    font-weight: 700;
+}
+
+.leftBar__mainNav{
+    margin-bottom: 10px;
+}
+
+.leftBar__library > p{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.leftBar__library > h5{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.leftBar__library > h5:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.leftBar__playlists > p{
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.leftBar__playlists > h5{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.leftBar__playlists > h5:hover{
+    color: white;
+    font-weight: 500;
+}

@@ -1,0 +1,12 @@
+.friendSection{
+    position: absolute;
+    right: 100px;
+    border-left: solid;
+    border-color: white;
+    border-width: 1px;
+    padding-left: 5px;
+}
+
+.friendSection > h5{
+    color: white;
+}
