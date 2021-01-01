@@ -1,0 +1,12 @@
+.song{
+    margin-right: 35px;
+}
+
+.song__image > img{
+    max-width: 300px;
+    height: 300px;
+}
+
+.song > h3{
+    color: white;
+}

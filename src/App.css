@@ -1,6 +1,7 @@
 *{
   margin: 10 0 0 0;
-  background-color: rgb(32, 32, 32);
+  /* background-color: rgb(32, 32, 32); */
+  background-color: black;
 }
 
 .mainContent{
@@ -14,4 +15,16 @@
 .friendSection{
   position: absolute;
   right: 0px;
+}
+
+.songs{
+  position: absolute;
+  left: 225px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.songRow{
+  display: flex;
 }

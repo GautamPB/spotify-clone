@@ -1,6 +1,7 @@
 .mainContent{
     color: white;
     margin-left: 20px;
+    /* background-color: rgb(32, 32, 32); */
 }
 
 .mainContent__search{
@@ -13,7 +14,7 @@
 
 .mainContent__search{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .mainContent__top{
@@ -31,24 +32,26 @@
     background-color: black;
     color: white;
     padding: 10px;
-    width: 150px;
+    width: 200px;
     height: 50px;
     border-color: white;
     border-width: 1px;
-    border-radius: 20px;
+    border-radius: 40px;
     color: white;
+    margin-right: 50px;
 }
 
 .mainContent__userInfo{
     display: flex;
     background-color: black;
     padding-top: 8px;
-    padding-right: 8px;
+    padding-right: 12px;
     padding-bottom: 3px;
     margin-left: 5px;
     margin-top: -5px;
     height: 48px;
-    border-radius: 30px;
+    border-radius: 100px;
+    margin-right: 100px;
 }
 
 .mainContent__userInfo > img{

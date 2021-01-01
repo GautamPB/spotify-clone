@@ -1,10 +1,11 @@
 .leftBar{
-    margin-left: 10px;
+    margin-left: 50px;
     color: rgb(160, 160, 160);
     border-right: solid;
     border-color: white;
     border-width: 1px;
-    /* padding-right: 10px; */
+    padding-right: 50px;
+    height: 100vh;
 }
 
 .leftBar__mainNav > h5{
