@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/MainContent.css'
 
 const MainContent = () => {
+
+    const [songs, setSongs] = useState([])
+
+    async function getData() {
+        await fetch("../api/getSongs")
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            setSongs(data.data)
+            console.log(data.data)
+        })
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
+
     return (
         <div className='mainContent'>
             <div className='mainContent__top'>

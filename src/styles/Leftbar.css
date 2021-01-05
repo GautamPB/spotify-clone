@@ -1,16 +1,19 @@
 .leftBar{
-    margin-left: 50px;
     color: rgb(160, 160, 160);
     border-right: solid;
-    border-color: white;
+    border-color: black;
     border-width: 1px;
     padding-right: 50px;
     height: 100vh;
+    background-color: black;
+    padding-left: 50px;
+    position: fixed;
 }
 
 .leftBar__mainNav > h5{
     margin-bottom: 15px;
     font-weight: 700;
+    background-color: black;
 }
 
 .leftBar__mainNav > h5:hover{
@@ -20,6 +23,11 @@
 
 .leftBar__mainNav{
     margin-bottom: 10px;
+    background-color: black;
+}
+
+.leftBar__library{
+    background-color: black;
 }
 
 .leftBar__library > p{
@@ -27,11 +35,13 @@
     color: gray;
     margin-bottom: 20px;
     margin-top: 10px;
+    background-color: black;
 }
 
 .leftBar__library > h5{
     margin-bottom: 15px;
     font-weight: 600;
+    background-color: black;
 }
 
 .leftBar__library > h5:hover{
@@ -39,16 +49,22 @@
     font-weight: 600;
 }
 
+.leftBar__playlists{
+    background-color: black;
+}
+
 .leftBar__playlists > p{
     font-size: 15px;
     color: gray;
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: black;
 }
 
 .leftBar__playlists > h5{
     margin-bottom: 15px;
     font-weight: 500;
+    background-color: black;
 }
 
 .leftBar__playlists > h5:hover{

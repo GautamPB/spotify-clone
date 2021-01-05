@@ -1,7 +1,13 @@
 .mainContent{
     color: white;
     margin-left: 20px;
-    /* background-color: rgb(32, 32, 32); */
+    z-index: 1;
+}
+
+.mainContent > h1{
+    position: fixed;
+    left: 290px;
+    top: 70px;
 }
 
 .mainContent__search{
@@ -10,6 +16,8 @@
     margin-bottom: 50px;
     width: 180px;
     height: 20px;
+    position: fixed;
+    margin-left: 200px;
 }
 
 .mainContent__search{
@@ -22,10 +30,10 @@
 }
 
 .mainContent__topRight{
-    position: absolute;
-    right: 250px;
     display: flex;
     margin-top: 10px;
+    position: fixed;
+    right: 350px;
 }
 
 .mainContent__topRight > button{
@@ -51,7 +59,6 @@
     margin-top: -5px;
     height: 48px;
     border-radius: 100px;
-    margin-right: 100px;
 }
 
 .mainContent__userInfo > img{

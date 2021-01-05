@@ -12,17 +12,60 @@ function App() {
         <MainContent className='mainContent' />
         <div className = 'songs'>
           <div className = 'songRow'>
-            <Song />
-            <Song />
-            <Song />
-            <Song />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
           </div>
 
           <div className = 'songRow'>
-            <Song />
-            <Song />
-            <Song />
-            <Song />
+          <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+          </div>
+
+          <div className = 'songRow'>
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
+            <Song 
+            song_image = 'https://pbs.twimg.com/media/Dr-L6ixWoAAU9k0.jpg'
+            song_title = 'Queen Greatest Hits'
+            />
           </div>
         </div>
         <FriendSection className='friendSection' />

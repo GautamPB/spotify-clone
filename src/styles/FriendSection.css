@@ -2,19 +2,27 @@
     position: absolute;
     right: 0px;
     border-left: solid;
-    border-color: white;
+    border-color: #333333;
     border-width: 1px;
     height: 100vh;
     padding-left: 30px;
     max-width: 260px;
+    background-color: #333333;
+    position: fixed;
 }
 
 .friendSection > h5{
     color: white;
+    background-color: #333333;
 }
 
 .friendSection__info > p{
     color: gray;
+    background-color: #333333;
+}
+
+.friendSection__facebook{
+    background-color: #333333;
 }
 
 .friendSection__facebook > button{

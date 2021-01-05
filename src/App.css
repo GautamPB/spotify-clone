@@ -1,11 +1,6 @@
 *{
   margin: 10 0 0 0;
-  /* background-color: rgb(32, 32, 32); */
-  background-color: black;
-}
-
-.mainContent{
-  /* background-color: rgb(32, 32, 32); */
+  background-color: rgb(32, 32, 32);
 }
 
 .App__homePage{
@@ -23,8 +18,14 @@
   top: 200px;
   display: flex;
   flex-direction: column;
+  max-width: 1350px;
+  position: absolute;
+  right: 10px;
+  justify-content: space-evenly;
 }
 
 .songRow{
   display: flex;
+  justify-content: space-evenly;
+  z-index: 0;
 }

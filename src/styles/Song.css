@@ -1,12 +1,19 @@
-.song{
+.song {
     margin-right: 35px;
+    background-color: rgb(64, 64, 64);
+    margin-bottom: 55px;
+    padding: 15px 15px 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.song__image > img{
-    max-width: 300px;
-    height: 300px;
+.song__image > img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
 }
 
-.song > h3{
+.song > h3 {
     color: white;
+    background-color: black;
+    background-color: rgb(64, 64, 64);
 }
