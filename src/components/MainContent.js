@@ -1,24 +1,34 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/MainContent.css'
+import Song from './Song'
 
 const MainContent = () => {
 
     const [songs, setSongs] = useState([])
 
     async function getData() {
-        await fetch("../api/getSongs")
-        .then((res) => {
-            return res.json()
-        })
-        .then((data) => {
-            setSongs(data.data)
-            console.log(data.data)
-        })
-    }
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=queen", {
+	        "method": "GET",
+	        "headers": {
+		        "x-rapidapi-key": "b545cc0c9fmsh99eb19dad714458p1d851bjsn1078d70b3e88",
+		        "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+            }
+            })
+            .then(response => {
+                return response.json()
+            })
+            .then((songs) => {
+                setSongs(songs.data)
+                console.log(songs.data)
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        }
 
     useEffect(() => {
         getData()
-    }, [])
+    }, []) //useState is called only once before the songs are set.
 
     return (
         <div className='mainContent'>
@@ -37,6 +47,19 @@ const MainContent = () => {
                 </div>
             </div>
             <h1>Home</h1>
+            <div className = 'mainContent__songRow'>
+                {songs.map((song) => {
+                    return (
+                        <Song
+                        key = {song.id}
+                        song_image = {song.album.cover_xl}
+                        song_title = {song.album.title}
+                        artist = {song.artist.name}
+                        url = {song.preview}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }
