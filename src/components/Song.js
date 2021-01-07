@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Song.css'
 
 const Song = ({song_image, song_title, key, url, artist}) => {
+
     return (
         <div className = 'song'>
             <div className = 'song__image'>

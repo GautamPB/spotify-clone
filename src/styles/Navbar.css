@@ -1,0 +1,93 @@
+.navbar{
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    /* z-index: 1; */
+}
+
+.navbar > h1{
+    position: fixed;
+    left: 290px;
+    top: 70px;
+    z-index: 1;
+}
+
+.navbar__search{
+    background: white;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    width: 180px;
+    height: 20px;
+    position: fixed;
+    margin-left: 200px;
+    z-index: 1;
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbar__searchButton {
+    background-color: black;
+    position: absolute;
+    left: 420px;
+    top: 15px;
+    z-index: 1;
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 40px;
+    color: white;
+    position: fixed;
+}
+
+.navbar__top{
+    display: flex;
+    position: relative;
+}
+
+.navbar__topRight{
+    display: flex;
+    margin-top: 10px;
+    position: fixed;
+    right: 350px;
+    z-index: 1;
+}
+
+.navbar__topRight > button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 40px;
+    margin-right: 50px;
+}
+
+.navbar__userInfo{
+    display: flex;
+    background-color: black;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    margin-left: 5px;
+    margin-top: -5px;
+    height: 48px;
+    border-radius: 100px;
+}
+
+.navbar__userInfo > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.navbar__userInfo > p{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    font-weight: 800;
+}

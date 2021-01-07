@@ -8,6 +8,7 @@
     background-color: black;
     padding-left: 50px;
     position: fixed;
+    z-index: 1;
 }
 
 .leftBar__mainNav > h5{

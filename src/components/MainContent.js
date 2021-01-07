@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+// import Navbar from './Navbar'
 import '../styles/MainContent.css'
 import Song from './Song'
 
-const MainContent = () => {
+const MainContent = (search) => {
 
     const [songs, setSongs] = useState([])
 
@@ -19,7 +20,7 @@ const MainContent = () => {
             })
             .then((songs) => {
                 setSongs(songs.data)
-                console.log(songs.data)
+                // console.log(songs.data)
             })
             .catch(err => {
                 console.error(err);
@@ -32,21 +33,7 @@ const MainContent = () => {
 
     return (
         <div className='mainContent'>
-            <div className='mainContent__top'>
-                <input type='text' name='search' className='mainContent__search' placeholder='Search' />
-                <div className='mainContent__topRight'>
-                    <button type='button'>UPGRADE</button>
-                    <div className='mainContent__userInfo'>
-                        <img
-                            className='mainContent__profilePic'
-                            src='https://www.computerhope.com/jargon/g/guest-user.jpg'
-                            alt=''
-                        />
-                        <p>Username</p>
-                    </div>
-                </div>
-            </div>
-            <h1>Home</h1>
+            {/* <Navbar className = 'mainContent__navbar' /> */}
             <div className = 'mainContent__songRow'>
                 {songs.map((song) => {
                     return (
