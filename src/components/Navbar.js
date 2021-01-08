@@ -3,20 +3,20 @@ import MainContent from './MainContent'
 import '../styles/Navbar.css'
 
 const Navbar = () => {
-    
-    // const [search, setSearch] = useState('')
 
-    let searchValue = ''
-    function getSearchValue() {
-        searchValue = document.getElementById('searchValue').value
+    const [search, setSearch] = useState('queen')
+
+    function changeSearch(e){
+        console.log(e)
+        setSearch(e.target.value)
     }
+
     return (
         <div className = 'navbar'>
             <div className='navbar__top'>
-                <input type='text' name='search' id = 'searchValue' className='navbar__search' placeholder='Search'/>
-                <button className = 'navbar__searchButton'
-                onClick = {getSearchValue}
-                >Search</button>
+                <input type='text' name='search' id = 'searchValue' className='navbar__search' value = {search}
+                onChange = {changeSearch}
+                />
                 <div className='navbar__topRight'>
                     <button type='button'>UPGRADE</button>
                     <div className='navbar__userInfo'>
@@ -30,7 +30,10 @@ const Navbar = () => {
                 </div>
             </div>
             <h1 className = 'navbar__header'>Home</h1>
-            <MainContent search = {searchValue} />
+            <MainContent 
+            search = {search}
+            setSearch = {changeSearch}
+            />
         </div>
     )
 }

@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react'
 import '../styles/MainContent.css'
 import Song from './Song'
 
-const MainContent = (search) => {
+const MainContent = ({search, setSearch}) => {
 
     const [songs, setSongs] = useState([])
 
     async function getData() {
-            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=queen", {
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=" + search, {
 	        "method": "GET",
 	        "headers": {
 		        "x-rapidapi-key": "b545cc0c9fmsh99eb19dad714458p1d851bjsn1078d70b3e88",
@@ -28,11 +28,19 @@ const MainContent = (search) => {
         }
 
     useEffect(() => {
+        let tempSearch
+        if (search === '') {
+            search = 'queen'
+        }
         getData()
-    }, []) //useState is called only once before the songs are set.
+    }, [search]) //useState is called only once before the songs are set.
 
     return (
         <div className='mainContent'>
+            <input type = 'text' name = 'search' className = 'mainContent__search'
+            value = {search}
+            onChange = {setSearch}
+            />
             {/* <Navbar className = 'mainContent__navbar' /> */}
             <div className = 'mainContent__songRow'>
                 {songs.map((song) => {
