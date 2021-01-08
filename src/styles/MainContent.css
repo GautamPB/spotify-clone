@@ -1,3 +1,8 @@
+.mainContent__search {
+    width: 0px;
+    height: 0px;
+}
+
 .mainContent__songRow {
     position: absolute;
     left: 250px;

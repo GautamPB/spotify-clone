@@ -28,7 +28,6 @@ const MainContent = ({search, setSearch}) => {
         }
 
     useEffect(() => {
-        let tempSearch
         if (search === '') {
             search = 'queen'
         }

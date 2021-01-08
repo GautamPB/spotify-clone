@@ -9,6 +9,7 @@
     max-width: 260px;
     background-color: #333333;
     position: fixed;
+    width: 15vw;
 }
 
 .friendSection > h5{
@@ -32,4 +33,6 @@
     padding: 14px;
     border: none;
     border-radius: 20px;
+    font-size: 13px;
+    width: 13vw;
 }

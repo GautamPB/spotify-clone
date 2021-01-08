@@ -4,10 +4,9 @@ import '../styles/Navbar.css'
 
 const Navbar = () => {
 
-    const [search, setSearch] = useState('queen')
+    const [search, setSearch] = useState('recommended')
 
     function changeSearch(e){
-        console.log(e)
         setSearch(e.target.value)
     }
 
@@ -16,6 +15,7 @@ const Navbar = () => {
             <div className='navbar__top'>
                 <input type='text' name='search' id = 'searchValue' className='navbar__search' value = {search}
                 onChange = {changeSearch}
+                placeholder = 'Search'
                 />
                 <div className='navbar__topRight'>
                     <button type='button'>UPGRADE</button>
@@ -33,6 +33,7 @@ const Navbar = () => {
             <MainContent 
             search = {search}
             setSearch = {changeSearch}
+            className = 'mainContent'
             />
         </div>
     )
