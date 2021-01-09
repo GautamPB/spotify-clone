@@ -1,18 +1,29 @@
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import LeftBar from './components/Leftbar'
-// import MainContent from './components/MainContent'
 import Navbar from './components/Navbar'
 import FriendSection from './components/FriendSection'
+import Login from './components/Login'
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <div className='App__homePage'>
-        <LeftBar className='leftBar' />
-        <Navbar />
-        <FriendSection className='friendSection' />
-      </div>
+      <Switch>
+        <Route path = '/login'>
+          <Login />
+        </Route>
+
+        <Route path = '/'>
+          <div className='App__homePage'>
+            <LeftBar />
+            <Navbar />
+            <FriendSection />
+          </div>
+        </Route>
+      </Switch>
     </div>
+    </Router>
   );
 }
 

@@ -9,7 +9,7 @@ const Song = ({song_image, song_title, key, url, artist}) => {
                 <img
                     src = { song_image }
                     alt = ''
-                />
+                /> 
             </div>
             <h6>{ artist }</h6>
             <h3>{ song_title }</h3>
