@@ -10,6 +10,7 @@
     left: 290px;
     top: 70px;
     z-index: 1;
+    color: white;
 }
 
 .navbar__search{
@@ -73,7 +74,8 @@
     border-radius: 50px;
 }
 
-.navbar__userInfo > p{
+.navbar__userInfo > p {
+    color: white;
     margin-top: 10px;
     margin-left: 10px;
     background-color: black;
