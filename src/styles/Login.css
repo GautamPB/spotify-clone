@@ -14,12 +14,14 @@
 .login__image > img {
     width: 180px;
     object-fit: contain;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: black;
 }
 
 .login__text {
+    margin-top: -5px;
+    padding-top: 15px;
     color: white;
     font-weight: bold;
     font-size: 25px;
