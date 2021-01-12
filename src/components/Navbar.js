@@ -2,13 +2,22 @@ import React, { useState } from 'react'
 import MainContent from './MainContent'
 import '../styles/Navbar.css'
 import { Link } from 'react-router-dom'
+import { useStateValue } from '../StateProvider'
+import { auth } from '../firebase'
 
 const Navbar = () => {
 
     const [search, setSearch] = useState('recommended')
+    const [{user}] = useStateValue()
 
     function changeSearch(e){
         setSearch(e.target.value)
+    }
+
+    const login = () => {
+        if (user) {
+            auth.signOut()
+        }
     }
  
     return (
@@ -21,14 +30,14 @@ const Navbar = () => {
                     />
                     <div className='navbar__topRight'>
                         <button type='button'>UPGRADE</button>
-                        <Link to = '/login'>
-                            <div className='navbar__userInfo'>
+                        <Link to = {!user && '/login'}>
+                            <div onClick = {login} className='navbar__userInfo'>
                                 <img
                                     className='navbar__profilePic'
                                     src='https://www.computerhope.com/jargon/g/guest-user.jpg'
                                     alt=''
                                 />
-                                <p>Login</p>
+                                <p>{!user? 'Login' : user.email}</p>
                             </div>
                         </Link>
                     </div>

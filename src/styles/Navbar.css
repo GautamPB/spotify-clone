@@ -75,6 +75,7 @@
 }
 
 .navbar__userInfo > p {
+    border: none;
     color: white;
     margin-top: 10px;
     margin-left: 10px;

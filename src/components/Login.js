@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
 import '../styles/Login.css'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { auth } from '../firebase'
 
 const Login = () => {
+
+    const history = useHistory()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const login = (event) => {
-        event.preventDefault() //prevents page from reloading
+        event.preventDefault() //prevents page from reloading(refreshing)
         //register logic here
         auth.signInWithEmailAndPassword(email, password) //returns a promise objects
         .then((auth) => {
             //logged in successfully, redirect to home page
+            history.push('/')
         })
         .catch((e) => {
             alert(e.message)
@@ -26,6 +29,7 @@ const Login = () => {
         auth.createUserWithEmailAndPassword(email, password)
         .then((auth) => {
             //created a user and logged in, redirect to home page
+            history.push('/')
         })
         .catch ((e) => {
             alert(e.message)
